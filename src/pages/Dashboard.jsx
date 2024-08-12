@@ -52,9 +52,9 @@ const Dashboard = () => {
             <div className='w-[100vw] mx-auto h-3 text-center p-6 mb-[60px]'>
                 <h2 className='text-2xl font-normal'>Banners Controls</h2>
             </div>
-            <div className='flex justify-between px-6 mt-[40px]'>
-                <div className="w-[400px] form p-4 border h-[500px]  border-gray-300 rounded-md m-[50px]">
-                    <form onSubmit={handleSubmit}>
+            <div className='flex flex-col lg:flex-row md:flex-col sm:fle justify-between px-6 mt-[40px]'>
+                <div className="w-[90vw] lg:w-[500px] form p-4  h-[700px] border-gray-300 rounded-md m-[50px]">
+                    <form onSubmit={handleSubmit} className='p-4'>
                         <div className="flex flex-col gap-4">
                             <div className="flex items-center justify-between">
                                 <label htmlFor="isvisible">Visible :</label>
@@ -66,17 +66,16 @@ const Dashboard = () => {
                                     checked={formData.bannerVisible}
                                     onChange={handleChange}
                                 />
-                                
                             </div>
-                            <div className="flex items-center justify-between">
+                            <div className="flex flex-col items-start justify-between">
                                 <label htmlFor="description">Description :</label>
-                                
                                 <textarea
                                     type="text"
                                     name="description"
-                                    cols="30" rows="2"
+                                    cols="30"
+                                    rows="2"
                                     id="description"
-                                    className="border border-gray-300 rounded px-2 py-1 bg-black"
+                                    className="border border-gray-300 rounded px-2 py-1 bg-black w-full"
                                     value={formData.description}
                                     onChange={handleChange}
                                 />
@@ -103,20 +102,16 @@ const Dashboard = () => {
                                     onChange={handleChange}
                                 />
                             </div>
-                            <button type="submit" className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md focus:outline-none">
+                            <button type="submit" className=" px-1 py-2 bg-blue-500 text-white rounded-md focus:outline-none">
                                 Submit
                             </button>
                         </div>
                     </form>
                 </div>
 
-                <div className="p-4 max-h-[500px] overflow-auto form-data">
-                    {banners.map((banner,id) => (
-    
-                         
-
-                        
-                        <div key={id} className="border w-[450px] p-4 rounded-md mb-4 bg-gray-800">
+                <div className="p-4 max-h-[500px] overflow-auto form-data w-[90vw] lg:w-auto mx-auto lg:mx-0">
+                    {banners.map((banner, id) => (
+                        <div key={id} className="border w-full lg:w-[450px] p-4 rounded-md mb-4 bg-gray-800">
                             <div className="flex justify-between items-center mb-2">
                                 <h3 className="text-lg font-bold">{banner.description}</h3>
                                 <div className='flex gap-4'>

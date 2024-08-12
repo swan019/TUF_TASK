@@ -48,7 +48,7 @@ const Banner = () => {
 
                                 <div className=''>
                                     <a href={banner.link}>
-                                        <button className='px-4 py-2 bg-[#D41F0F] m-6 text-white rounded-md'>Explore</button>
+                                        <button className='px-4 py-2 bg-[#D41F0F] mt-6 text-white rounded-md'>Explore</button>
                                     </a>
                                 </div>
                             </div>

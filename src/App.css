@@ -1,4 +1,6 @@
-
+body{
+  overflow-x: hidden;
+}
 
 .navbar {
     width: 100%;
@@ -71,13 +73,11 @@
   align-items: center;
 }
 
-.form {
-  max-height: 300px;
-}
+
 
 .form-data {
 
-    -ms-overflow-style: none;  /* IE and Edge */
+    /* -ms-overflow-style: none;  IE and Edge */
     scrollbar-width: none;  /* Firefox */
   
 }
