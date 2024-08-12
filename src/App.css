@@ -1,0 +1,83 @@
+
+
+.navbar {
+    width: 100%;
+    zoom: 1;
+  }
+
+  @media screen and (min-width: 768px) { /* adjust the breakpoint as needed */
+    .navbar {
+      transform: scale(1); /* or a fixed scale value, e.g., 0.8 */
+    }
+  }
+
+
+.background {
+    min-height: 100vh;
+    background: rgb(29, 20, 20);
+    background: linear-gradient(324deg, rgba(5, 4, 4, 0.981) 0%, rgb(0, 0, 0) 44%, rgb(31, 5, 13) 56%, rgba(40, 17, 17, 1.25) 100%);
+}
+
+.banner {
+    width: 60rem;
+    background-color: rgba(16, 16, 16, 0.975);
+    border: 1px solid rgb(39, 38, 38);
+    margin: 30px auto;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 780px;
+    min-height: 100px;
+    height: 200px;
+    background-color: aliceblue;
+    background-color:rgba(52, 54, 48, 0.652);
+   
+}
+
+.banner-btn {
+    background-color: #D41F30;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+.banner-flex {
+  max-width: 920px;
+  width: 820px;
+  /* background-color: rgb(211, 201, 188); */
+  min-height: 100px;
+  height: 80%;
+}
+
+
+
+.layer {
+  width: 414px;
+  height: 250px;
+  
+}
+
+
+.row {
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+}
+
+.form {
+  max-height: 300px;
+}
+
+.form-data {
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  
+}
