@@ -1,5 +1,9 @@
 body{
   overflow-x: hidden;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: rgb(29, 20, 20);
+  background: linear-gradient(324deg, rgba(5, 4, 4, 0.981) 0%, rgb(0, 0, 0) 44%, rgb(31, 5, 13) 56%, rgba(40, 17, 17, 1.25) 100%);
 }
 
 .navbar {
