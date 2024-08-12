@@ -53,10 +53,10 @@ const Banner = () => {
                                 </div>
                             </div>
 
-                            <div className='my-auto flex pb-6'>
+                            <div className='my-auto flex pb-6 '>
                                 <div className=''>
-                                    <div className='layer flex-col relative z-1 top-[-10px]'>
-                                        <div className='w-[70%] bg-[#3F3A3A] relative flex items-center justify-around gap-[-90px] mx-auto rounded-md right-[-90px] top-1 py-1'>
+                                    <div className='layer flex-col relative z-1 '>
+                                        <div className='w-[80%] bg-[#626060] relative right-[-60px] flex items-center justify-around  gap-[-90px] mx-auto rounded-md  top-1 py-1'>
                                             {timeArray.map((timeSegment, index) => (
                                                 <div key={index} className='flex gap-3'>
                                                     {timeSegment.split('').map((digit, i) => (
