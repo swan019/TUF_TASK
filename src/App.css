@@ -33,7 +33,7 @@
     align-items: center;
     max-width: 780px;
     min-height: 100px;
-    height: 200px;
+    height: auto;
     background-color: aliceblue;
     background-color:rgba(52, 54, 48, 0.652);
    
